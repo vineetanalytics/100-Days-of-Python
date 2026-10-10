@@ -1,0 +1,121 @@
+# Day 2 -- Variables, Data Types & User Input
+
+# 1. What is variaables ?
+# # Variable is name which store data inside the variable.
+
+name = "Vineet"
+age = 19
+marks = 85.5
+
+# Name -- in the name we storeing the string value - ( text value ).
+# Age -- in the age we are storing the integer value - ( Whole Number ).
+# Marks -- in the marks we are storing float value - ( Decimal Number ).
+
+# 2. Basic Data Types in python.
+
+#   |   Data Type   |   Exmaple     |   Meaning         |
+#   |   str         |   "Vineet"    |   Text            |
+#   |   int         |   19          |   Whole number    |
+#   |   float       |   85.5        |   Decimal number  |
+#   |   bool        |   True        |   True or False   |
+
+# Function:- to check the data type of variable in python is -- type()
+
+name = "Vineet"
+age = 19
+marks = 85.5
+is_student = True
+
+print(type(name))
+print(type(age))
+print(type(marks))
+print(type(is_student))
+
+# Output:-
+# <class 'str'>
+# <class 'int'>
+# <class 'float'>
+# <class ''bool'>
+
+# 3. input() -- the function the use to take the input from user.
+
+name = input("Enter the name: ")
+print("Welcome", name)
+
+# when code run it will give you:- Enter your name: 
+# Enter your name : Vineet
+
+# Output:-
+# Welcome Vineet
+
+# 4. Important concept of -- input() and Numbers
+
+# In Python, the value returned by input() is always a string ( str ) by default, even if the user enters a number.
+
+# Incorrect Approach
+a = input("Enter first number: ")
+b = input("Enter second number: ")
+
+print(a + b)
+
+# If you enter 10 and 20, the result will be 1020 because Python is joining the two values as text instead of adding them as numbers.
+
+# Correct Approach
+a = int(input("Enter first number: "))
+b = int(input("Enter second nnumber: "))
+
+print("Sum =", a + b)
+
+# Output:-
+# Enter first number: 10
+# Enter second number: 20
+# Sum = 30
+
+# int() converts a value into an integer ( a whole number ).
+# float() converts a value into a floating-point number (a decimal number ).
+
+# For example, use float(input()) when you want to accept decimal numbers such as 10.5.
+
+
+# Day 2 -- Practice Challenge
+
+# Today's Tasks
+
+# Task 1: Personal Information
+# Take the user's name, age, and course as input, then print the information.
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+course = input("Enter your course: ")
+
+print(name)
+print(age)
+print(course)
+
+# Task 2: Addition Calculator
+# Take two numbers from the user and print their sum.
+
+num = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Sum: ", num + num2 )
+
+# Task 3: Data Type Checker
+# Create variables for a name, age, and marks. Print the data type of each variable using type().
+
+name = "Vineet"
+age = 19
+marks = 99.9
+
+print(type(name))
+print(type(age))
+print(type(marks))
+
+# Task 4: Age Calculator
+# Ask the user to enter their birth year and calculate their approximate age using the formula:
+# Age = 2026 - Birth Year
+
+userage = int(input("Enter your birth year: "))
+age = 2026 - userage
+
+print("Your approximate age is:", age)
