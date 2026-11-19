@@ -98,5 +98,5 @@ Through this challenge, I aim to:
 
 ## 📈 Progress
 
-Started: November 2026  
+Started: August 2026  
 Goal: Complete 100 Days of Consistent Python Practice 🚀
